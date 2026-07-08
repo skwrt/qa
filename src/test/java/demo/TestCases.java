@@ -53,6 +53,31 @@ public class TestCases {
         driver.manage().window().maximize();
     }
 
+    @Test
+    public void testCase01() throws InterruptedException{
+        Wrappers wrapper = new Wrappers(driver);
+        wrapper.homePage();
+        wrapper.searchFor("Washing Machine");
+        wrapper.getRatingsCount();
+    }
+    
+    @Test
+    public void testCase02() throws InterruptedException{
+        Wrappers wrapper = new Wrappers(driver);
+        wrapper.homePage();
+        wrapper.searchFor("iPhone");
+        wrapper.titleWithDiscount();
+    }
+
+    @Test
+    public void testCase03() throws InterruptedException{
+        Wrappers wrapper = new Wrappers(driver);
+        wrapper.homePage();
+        wrapper.searchFor("Coffee Mug");
+        wrapper.highestReviews();
+        Thread.sleep(10000);
+    }
+
     @AfterTest
     public void endTest()
     {
