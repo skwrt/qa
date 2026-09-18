@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test Suite for Qtrip">
+    <groups>
+        <run>
+            <include name="Login Flow"> </include>
+            <include name="Search and Filter Flow"> </include>
+            <include name="Booking and Cancellation Flow"> </include>
+            <include name="Reliability Flow"> </include>
+        </run>
+    </groups>
+    <test name = "Test Cases for Buildout">
+       <classes>          
+            <class name="qtriptest.tests.testCase_01"></class>
+            <class name="qtriptest.tests.testCase_02"></class>
+            <class name="qtriptest.tests.testCase_03"></class>
+            <class name="qtriptest.tests.testCase_04"></class>
+        </classes>
+    </test>
+</suite>
